@@ -7,7 +7,7 @@ Basta clicar no botão "Compartilhar minha localização" e o resultado vem em s
 ![print_screen_2](https://user-images.githubusercontent.com/38012894/143263148-13cb49b2-14e0-43af-8185-21673f04db5f.png)
 
 
----------------------------------------------------------------------------------------------------------------------------------
+---
 
 Para rodar a aplicação é necessário duas api_key das seguintes plataformas:
 

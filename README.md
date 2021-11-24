@@ -9,14 +9,14 @@ Basta clicar no botão "Compartilhar minha localização" e o resultado vem em s
 
 ---
 
-Para rodar a aplicação é necessário duas api_key das seguintes plataformas:\
+Para rodar a aplicação é necessário duas api_key das seguintes plataformas:
 
 -https://positionstack.com/ --> api utilizada para consultar o endereço \
--https://openweathermap.org/ --> api utilizada para consultar o tempo \
+-https://openweathermap.org/ --> api utilizada para consultar o tempo 
 
 Nomes das variaveis esperadas no .env: \
 -REACT_APP_ADDRESS_API_KEY \
--REACT_APP_WEATHER_API_KEY \
+-REACT_APP_WEATHER_API_KEY 
 
 Foi utilizado Material-UI na versão 4 para a criação do aplicativo.
 

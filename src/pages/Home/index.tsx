@@ -18,7 +18,7 @@ const Home = () => {
   const [refresh, setRefresh] = useState(false);
 
   const shareMyLocation = useCallback(() => {
-    navigator.geolocation.getCurrentPosition(async position => {
+    navigator?.geolocation?.getCurrentPosition(async position => {
       setLoading(true);
       setRefresh(true);
       try {

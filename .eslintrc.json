@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "import-helpers", "unused-imports"],
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "airbnb", "prettier", "eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 10,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "JSX": true
+  },
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-restricted-globals": ["error"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", "jsx", ".ts", ".tsx"]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+
+    "import/prefer-default-export": "off",
+    "react/display-name": ["off"],
+    "react/prop-types": ["off"],
+    "no-restricted-imports": ["error", "date-fns", "mdi-react", "@material-ui/core", "@material-ui/styles"],
+    "linebreak-style": ["error", "unix"],
+    "class-methods-use-this": "off",
+    "camelcase": "off",
+    "max-lines": ["warn", 400],
+    "max-len": [
+      "warn",
+      150,
+      2,
+      {
+        "ignorePattern": "^(import|export)",
+        "ignoreUrls": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "no-unused-expressions": "off",
+    "consistent-return": "off",
+    "no-async-promise-executor": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "no-return-await": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-param-reassign": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": ["/^react/", "/^@material-ui/", "module", ["parent", "sibling", "index"]],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "no-trailing-spaces": ["error"],
+    "no-extra-semi": ["error"],
+    "no-var": ["error"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "eqeqeq": 0,
+    "no-shadow": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "@typescript-eslint/adjacent-overload-signatures": ["error"],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Za-z]",
+          "match": true
+        }
+      }
+    ],
+    "@typescript-eslint/no-namespace": ["error"],
+    "@typescript-eslint/no-require-imports": ["warn"],
+    "@typescript-eslint/no-object-literal-type-assertion": "off",
+    "quote-props": "off",
+    "react/style-prop-object": "off",
+    "no-useless-escape": "error",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "unused-imports/no-unused-imports-ts": "error",
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "off"
+      }
+    ]
+  }
+}
